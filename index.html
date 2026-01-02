@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Glassmorphism</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <div class="logo-icon">P</div>
+                <h2 class="loader-title">Portfolio</h2>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text">
+                    <span id="progressText">0%</span>
+                </div>
+            </div>
+            <p class="loader-subtitle">Loading your experience...</p>
+        </div>
+    </div>
+
+    <div class="bg-animation" id="mainContent" style="opacity: 0;">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <span class="logo-text">Portfolio</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content glass-effect">
+                    <h1 class="hero-title">
+                        <span class="greeting">Halo, Saya</span>
+                        <span class="name">Malik!</span>
+                    </h1>
+                    <p class="hero-subtitle">Web Developer & Designer</p>
+                    <p class="hero-description">
+                        Menciptakan website modern dengan desain kekinian dan pengalaman pengguna yang luar biasa
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Lihat Project</a>
+                        <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card glass-effect">
+                        <div class="profile-placeholder">
+                            <svg viewBox="0 0 100 100" class="profile-icon">
+                                <circle cx="50" cy="35" r="15" fill="rgba(255,255,255,0.6)"/>
+                                <path d="M20 80 Q50 60 80 80 L80 100 L20 100 Z" fill="rgba(255,255,255,0.6)"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="about-content">
+                    <div class="about-text glass-effect">
+                        <p>
+                            Saya seorang web developer passionate yang especializada dalam menciptakan
+                            website modern dengan teknologi terdepan. Fokus saya adalah pada performa,
+                            aksesibilitas, dan desain yang menawan.
+                        </p>
+                        <div class="skills">
+                            <div class="skill-item">
+                                <span class="skill-name">HTML/CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">React</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Project Saya</h2>
+                <div class="projects-grid">
+                    <div class="project-card glass-effect">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg viewBox="0 0 200 120">
+                                    <rect width="200" height="120" fill="rgba(255,255,255,0.1)"/>
+                                    <path d="M20 20 L180 20 L180 100 L20 100 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                                    <circle cx="40" cy="40" r="10" fill="rgba(255,255,255,0.4)"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Portfolio Glassmorphism</h3>
+                            <p><strong>Problem:</strong> Butuh portfolio website modern dengan desain kekinian.</p>
+                            <p><strong>Solusi:</strong> Single-page portfolio dengan efek glassmorphism, animasi smooth, dan fully responsive.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-effect">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg viewBox="0 0 200 120">
+                                    <rect width="200" height="120" fill="rgba(255,255,255,0.1)"/>
+                                    <rect x="30" y="30" width="140" height="60" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2" rx="5"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-Commerce Dashboard</h3>
+                            <p><strong>Problem:</strong> Admin perlu dashboard yang mudah digunakan untuk mengelola produk.</p>
+                            <p><strong>Solusi:</strong> Dashboard dengan real-time analytics, chart interaktif, dan CRUD operations.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Chart.js</span>
+                                <span class="tech-tag">API</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card glass-effect">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <svg viewBox="0 0 200 120">
+                                    <rect width="200" height="120" fill="rgba(255,255,255,0.1)"/>
+                                    <path d="M50 60 L100 30 L150 60 L100 90 Z" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Mobile App Landing</h3>
+                            <p><strong>Problem:</strong> Startup butuh landing page yang menarik untuk mobile app.</p>
+                            <p><strong>Solusi:</strong> Landing page dengan animasi smooth, testimonials, dan conversion optimization.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">GSAP</span>
+                                <span class="tech-tag">Tailwind</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link">Live Demo</a>
+                                <a href="#" class="project-link">Source Code</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Hubungi Saya</h2>
+                <div class="contact-content">
+                    <div class="contact-info glass-effect">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>malikacconlyone@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h4>WhatsApp</h4>
+                                <p>+62 889 198 3723</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Indonesia</p>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="#" class="social-link glass-effect">GH</a>
+                            <a href="#" class="social-link glass-effect">LI</a>
+                            <a href="#" class="social-link glass-effect">IG</a>
+                        </div>
+                    </div>
+                    <div class="contact-form glass-effect">
+                        <div class="whatsapp-section">
+                            <h3>Chat via WhatsApp</h3>
+                            <p>Lebih cepat dan mudah! Klik tombol di bawah untuk langsung chat via WhatsApp</p>
+                            <a href="https://wa.me/628891983723" target="_blank" class="whatsapp-btn">
+                                <span class="whatsapp-icon">📱</span>
+                                <div class="whatsapp-content">
+                                    <span class="whatsapp-title">Chat Sekarang</span>
+                                    <span class="whatsapp-number">+62 889 198 3723</span>
+                                </div>
+                                <span class="whatsapp-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026, Malik Fajar. Dibuat dengan ❤️ menggunakan Glassmorphism Design</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
